@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "zeroauthoritydao": {
+      "type": "http",
+      "url": "https://zeroauthoritydao.com/mcp",
+      "headers": {
+        "Authorization": "Bearer za_bf07d3bdcd2cfa70d2f63638e5214f562d740c9f28fa0a7288c462373b665215"
+      }
+    }
+  }
+}
