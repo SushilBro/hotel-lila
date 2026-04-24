@@ -1,6 +1,6 @@
 [db]
 major_version = 15
 
-[seed]
+[db.seed]
 enabled = true
 sql_paths = ["./seed.sql"]
