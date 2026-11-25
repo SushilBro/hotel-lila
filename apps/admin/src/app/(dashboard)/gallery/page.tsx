@@ -5,6 +5,7 @@ import {
   uploadGalleryImageAction
 } from "@/lib/actions";
 import { createSupabaseServer } from "@/lib/supabase";
+import { CompressedImageInput } from "@/components/compressed-image-input";
 
 export default async function GalleryAdminPage() {
   const supabase = await createSupabaseServer();
@@ -34,7 +35,7 @@ export default async function GalleryAdminPage() {
       </form>
       <form action={uploadGalleryImageAction} className="grid gap-2 rounded-lg border border-slate-200 p-4">
         <h2 className="text-sm font-semibold">Upload to Supabase Storage</h2>
-        <input type="file" name="file" accept="image/*" required className="rounded border p-2" />
+        <CompressedImageInput name="file" />
         <input name="caption" placeholder="Caption" className="rounded border p-2" />
         <input name="category" placeholder="Category" className="rounded border p-2" />
         <input name="sortOrder" type="number" defaultValue={0} className="rounded border p-2" />
